@@ -1,0 +1,154 @@
+/* Estilo geral do corpo */
+body {
+  font-family: Arial, sans-serif;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+    url('../imagens/fundo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+}
+
+/* Títulos */
+h1, h2 {
+  text-align: center;
+  color: #2e7d32;
+  text-shadow: 1px 1px 2px #cfcfcf;
+}
+
+/* Formulário */
+form {
+  width: 100%;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* Botões */
+button {
+  background: #2e7d32;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #1b5e20;
+}
+
+/* Botão de link (nova busca) */
+a button {
+  width: auto;
+  padding: 10px 20px;
+  background-color: #43a047;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+a button:hover {
+  background-color: #388e3c;
+}
+
+/* Lista (caso usada) */
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Cards individuais */
+.card {
+  width: 300px;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  display: inline-block;
+  margin: 20px;
+  vertical-align: top;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 15px;
+  color: #333;
+}
+
+.card-info h3 {
+  margin: 0 0 10px;
+  color: #2e7d32;
+}
+
+/* Container dos cards (responsivo) */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Imagens gerais (ex: fora dos cards) */
+img {
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+.subtitulo {
+  font-style: italic;
+  font-size: 1.2em;
+  color: #2e7d32;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* sombra leve */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
